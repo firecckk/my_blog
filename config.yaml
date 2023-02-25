@@ -1,0 +1,77 @@
+baseURL: http://example.org/
+languageCode: en-us
+title: CK's site
+paginate: 5
+
+module:
+  imports:
+    - path: github.com/CaiJimmy/hugo-theme-stack/v3
+
+languages:
+    en:
+        languageName: English
+        title: CK's site 
+        description: zero description 
+        weight: 1
+    zh-cn:
+        languageName: 中文
+        title: 演示站点
+        description: 演示说明
+        weight: 2
+
+disqusShortname: hugo-theme-stack
+
+# Theme i18n support
+# Available values: ar, bn, ca, de, el, en, es, fr, hu, id, it, ja, ko, nl, pt-br, th, uk, zh-cn, zh-hk, zh-tw
+DefaultContentLanguage: en
+
+permalinks:
+    post: /p/:slug/
+    page: /:slug/
+
+params:
+    mainSections: 
+        - post
+        - posts
+    featuredImageField: image
+    rssFullContent: true
+    favicon: favicon.ico
+
+    footer:
+          since: 2023
+          customText: CK's site
+
+    sidebar:
+      compact: false
+      emoji: 🍥
+      subtitle: subtitle of side bar
+      avatar:
+        enabled: true
+        local: true
+        src: img/avatar.png
+
+    article:
+      math: true
+      toc: true
+      readingTime: true
+      license:
+        enabled: false
+        default: default
+
+    widgets:
+      homepage: []
+      page: []
+
+    colorScheme:
+        # Display toggle
+        toggle: true
+
+        # Available values: auto, light, dark
+        default: auto
+
+    imageProcessing:
+        cover:
+            enabled: true
+        content:
+            enabled: true
+
